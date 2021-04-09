@@ -1,0 +1,22 @@
+.text-uppercase{
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+
+}
+#footer-link{
+    text-align: center;
+    margin:0 auto;
+    width: 50%;
+    border-top: 5px ;
+}
+
+
+#footer-hr{
+    width: 75%;
+    border-color: black;
+    border-top: 4px solid black;
+    margin: 30px auto;
+}
+
+
