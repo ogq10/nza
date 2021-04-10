@@ -15,14 +15,14 @@
 }
 
 .container {
-    background-color: white;
     margin-left: 250px;
+    margin-right: 0px;
     margin-top: 5%;
     position: absolute;
 }
 
 .row {
-    height: 12.5%;
+    background-color: white;
 }
 
 #image {
@@ -37,9 +37,12 @@
     margin-top: 0%;
 }
 
+.col-md-12 {    
+}
+
 .button {
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: rgb(197, 197, 197);
     color: white;
     margin-left: 80px;
