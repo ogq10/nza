@@ -67,17 +67,16 @@ body {
 
   .sidenav {
     width: 160px;
-    height: 345px;
+    height: 348px;
     position: absolute;/*changed from fixed because it moved with the page*/
     z-index: 1;
-    top: 170px;/*changed from 200px because it was too low*/
+    top: 197px;/*changed from 200px because it was too low*/
     right: 50px; /*This affects position from left*/
     background: #AD0000;
     background: -moz-linear-gradient(top, #AD0000 0%, #6E0000 100%);
     background: -webkit-linear-gradient(top, #AD0000 0%, #6E0000 100%);
     background: linear-gradient(to bottom, #AD0000 0%, #6E0000 100%);
     overflow-x: hidden;
-    
   }
 
 /*not sure if this works yet*/  
@@ -155,10 +154,10 @@ body {
 
 /*forward-thinking image*/
 #forward_thinking{
-    position: relative;
+    margin-top: 10px;
     padding-left: 50px;
     padding-right: 10px;
-    width: 90%;
+    width: 75%;
 
 }
 
@@ -179,8 +178,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
     padding-left: 50px;
-    padding-right: 60px;
-
+    width: 75%;
 }
 
 #who_we_are_header2{
@@ -188,6 +186,7 @@ body {
     color: black; 
     width: 160px;
     font-size: 12px;
+    padding-top: 40px;
 
   }
 #who_we_are_text2{
@@ -225,4 +224,48 @@ body {
 .footer{
     padding-top: 50px;
 
+}
+/* header*/
+#nav {
+  position: absolute;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;/*changed to 0*/
+  float:left;
+}
+#nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 155px 20px;  /* height of the nav bar* chnaged froom 300*/ 
+  display: block;
+  color: black;
+  text-align: center;
+  font-weight: thick;
+  font-size: medium;
+}
+.line-1{
+  width: 90%;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-top: 10px;/* changed from padding-bottom 1px*/
+  margin-left: 47px;
+}
+
+.line-2{
+  margin-left: 47px;
+  width: 90%;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 35px;
 }
