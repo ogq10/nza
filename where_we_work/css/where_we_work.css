@@ -16,9 +16,11 @@
 
 .container {
     margin-left: 250px;
-    margin-right: 0px;
+    margin-right: 250px;
     margin-top: 5%;
     position: absolute;
+    background-color: white;
+    height: 900px;
 }
 
 .row {
@@ -48,4 +50,222 @@
     margin-left: 80px;
     width: 65px;
     height: 35px;
+}
+
+body {
+    /*font does not allow bold*/
+    font-family: ;
+}
+
+
+
+/* header*/
+#nav {
+    position: absolute;
+    left: 50px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+#nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;/*changed to 0*/
+    float: left;
+}
+#nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 16px 60px;  /* height of the nav bar* chnaged froom 300*/ 
+    display: block;
+    color: black;
+    text-align: center;
+}
+.line-1{
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid black;
+    padding-top: 10px;/* changed from padding-bottom 1px*/
+    margin-left: 47px;
+}
+  
+.line-2{
+    margin-left: 47px;
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 35px;
+}
+
+#who_we_are{
+    vertical-align: top;
+    
+}
+
+#who_we_are_header{
+    padding-top: 10px;
+    color: black; 
+    padding-left: 50px;
+    font-size: 12px;    
+}
+
+#who_we_are_text{
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 50px;
+    width: 75%;
+}
+
+#who_we_are_header2{
+    color: black; 
+    width: 160px;
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+#who_we_are_text2{
+    color: black;
+    width: 160px;
+    font-size: 12px;
+}
+
+#row1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* sidenav */
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidenav-content {
+    border-top: white;
+    border-top-width: medium;
+}
+
+.sidenav {
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 240px;
+    height: 340px;
+    z-index: 1;
+    top: 20px;
+    /*left: 20px; /*This affects position from left*/
+    background: #AD0000;
+    background: -moz-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: -webkit-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: linear-gradient(to bottom, #AD0000 0%, #6E0000 100%);
+    overflow-x: hidden;
+    color: white;
+}
+
+#side-nav-content-text {
+    border-top: 2x solid white;
+    padding-bottom: 10px;
+}
+
+#side-img {
+    height: 120px;
+
+}
+
+#career-text {
+    padding-top: 10px;
+}
+
+/*not sure if this works yet*/  
+#sidenav-wrapper {
+    height: 100vh; /* Add height */
+    overflow-y: auto;  /* Add overflow-y */
+    overflow-x: hidden;  /* Add overflow-x */
+    /* min-height: 100vh; */
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+.sidenav a:hover {
+    color: #ffd23d;
+}
+/*Image*/
+div img{
+      margin-top: -10px;
+      margin-bottom: 5px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*location text and grid*/
+
+#text-location-area {
+    margin-left: 50px;
+    height: %;
+}
+
+#location-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text text text text"
+        "heading heading heading heading2";
+    height: 150px;
+    box-sizing: border-box;
+}
+
+#location-text {
+    grid-area: text;
+}
+
+#location-headings {
+    grid-area: heading;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    margin-right: 20px;
+}
+
+#location-headings2 {
+    grid-area: heading2;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+#states-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    line-height: 10px;
+    
+}
+
+#footer-link{
+    text-align: center;
+    margin:0 auto;
+    width: 90%; 
+    border-top:1px solid black;
+    color: black;
+}
+
+.footer{
+    padding-top: 50px;
+    color: black;
+    
+
 }
