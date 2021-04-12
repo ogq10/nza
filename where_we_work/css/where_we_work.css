@@ -17,10 +17,10 @@
 .container {
     margin-left: 250px;
     margin-right: 250px;
-    margin-top: 5%;
+    margin-top: 6.5%;
     position: absolute;
     background-color: white;
-    height: 900px;
+    height: 850px;
 }
 
 .row {
@@ -60,9 +60,39 @@ body {
 
 
 /* header*/
+
+#vertline1 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 280px;
+    color: gray;
+}
+
+#vertline2 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 215px;
+    color: gray;
+}
+
+#vertline3 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 250px;
+    color: gray;
+}
+
+#vertline4 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 240px;
+    color: gray;
+}
+
+
 #nav {
     position: absolute;
-    left: 50px;
+    left: 75px;
     height: 50px;
     width: 100%;
     display: flex;
@@ -87,16 +117,16 @@ body {
     text-align: center;
 }
 .line-1{
-    width: 90%;
+    width: 92%;
     border: 0;
     border-bottom: 2px solid black;
     padding-top: 10px;/* changed from padding-bottom 1px*/
-    margin-left: 47px;
+    margin-left: 50px;
 }
   
 .line-2{
-    margin-left: 47px;
-    width: 90%;
+    margin-left: 50px;
+    width: 92%;
     border: 0;
     border-bottom: 2px solid black;
     padding-bottom: 35px;
@@ -104,7 +134,6 @@ body {
 
 #who_we_are{
     vertical-align: top;
-    
 }
 
 #who_we_are_header{
@@ -142,19 +171,19 @@ body {
 
 /* sidenav */
 
-a {
+#sidenav-content a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 #sidenav-content {
-    border-top: white;
-    border-top-width: medium;
+    display: block;
+    border-top: 1px solid white;
+    margin-right: 20px;
 }
 
 .sidenav {
-    
     padding-top: 20px;
     padding-left: 20px;
     width: 240px;
@@ -170,14 +199,14 @@ a {
     color: white;
 }
 
-#side-nav-content-text {
-    border-top: 2x solid white;
-    padding-bottom: 10px;
-}
-
 #side-img {
     height: 120px;
 
+}
+
+#side-nav-content-text {
+    display: block;
+    padding-bottom: 10px;
 }
 
 #career-text {
@@ -255,17 +284,73 @@ div img{
     
 }
 
+.footer a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-line {
+    display: block;
+    border-top: 2px solid rgb(206, 206, 206);
+    content: "";
+    margin: 10px;
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    margin-left: 250px; 
+}
+
+
+
 #footer-link{
+    margin-left: 50px;
     text-align: center;
-    margin:0 auto;
+    margin-top: 50px;
     width: 90%; 
     border-top:1px solid black;
     color: black;
+    padding-top: 10px;
 }
 
-.footer{
-    padding-top: 50px;
-    color: black;
-    
+.footer #who {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-left: 175px;
+    margin-right: 20px;
+    padding-right: 50
+} 
 
-}
+.footer #what {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #news {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #where {
+    background-color: white;
+    z-index: 1;
+    width: 175px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #contact {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-right: 20px;
+    padding-right: 50
+} 
