@@ -1,0 +1,356 @@
+.outer-container {
+    display: flex;
+    flex-grow: 1;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+#img {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;   
+}
+
+.container {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 6.5%;
+    position: absolute;
+    background-color: white;
+    height: 850px;
+}
+
+.row {
+    background-color: white;
+}
+
+#image {
+    padding-left: 50px;
+}
+
+.col-md-10 {
+    margin-top: 5%;
+}
+
+.col-md-2 {
+    margin-top: 0%;
+}
+
+.col-md-12 {    
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+    color: white;
+    margin-left: 80px;
+    width: 65px;
+    height: 35px;
+}
+
+body {
+    /*font does not allow bold*/
+    font-family: ;
+}
+
+
+
+/* header*/
+
+#vertline1 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 280px;
+    color: gray;
+}
+
+#vertline2 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 215px;
+    color: gray;
+}
+
+#vertline3 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 250px;
+    color: gray;
+}
+
+#vertline4 {
+    float: left;
+    margin-top: 16px;
+    margin-left: 240px;
+    color: gray;
+}
+
+
+#nav {
+    position: absolute;
+    left: 75px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+#nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;/*changed to 0*/
+    float: left;
+}
+#nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 16px 60px;  /* height of the nav bar* chnaged froom 300*/ 
+    display: block;
+    color: black;
+    text-align: center;
+}
+.line-1{
+    width: 92%;
+    border: 0;
+    border-bottom: 2px solid black;
+    padding-top: 10px;/* changed from padding-bottom 1px*/
+    margin-left: 50px;
+}
+  
+.line-2{
+    margin-left: 50px;
+    width: 92%;
+    border: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 35px;
+}
+
+#who_we_are{
+    vertical-align: top;
+}
+
+#who_we_are_header{
+    padding-top: 10px;
+    color: black; 
+    padding-left: 50px;
+    font-size: 12px;    
+}
+
+#who_we_are_text{
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 50px;
+    width: 75%;
+}
+
+#who_we_are_header2{
+    color: black; 
+    width: 160px;
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+#who_we_are_text2{
+    color: black;
+    width: 160px;
+    font-size: 12px;
+}
+
+#row1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* sidenav */
+
+#sidenav-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidenav-content {
+    display: block;
+    border-top: 1px solid white;
+    margin-right: 20px;
+}
+
+.sidenav {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 240px;
+    height: 340px;
+    z-index: 1;
+    top: 20px;
+    /*left: 20px; /*This affects position from left*/
+    background: #AD0000;
+    background: -moz-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: -webkit-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: linear-gradient(to bottom, #AD0000 0%, #6E0000 100%);
+    overflow-x: hidden;
+    color: white;
+}
+
+#side-img {
+    height: 120px;
+
+}
+
+#side-nav-content-text {
+    display: block;
+    padding-bottom: 10px;
+}
+
+#career-text {
+    padding-top: 10px;
+}
+
+/*not sure if this works yet*/  
+#sidenav-wrapper {
+    height: 100vh; /* Add height */
+    overflow-y: auto;  /* Add overflow-y */
+    overflow-x: hidden;  /* Add overflow-x */
+    /* min-height: 100vh; */
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+.sidenav a:hover {
+    color: #ffd23d;
+}
+/*Image*/
+div img{
+      margin-top: -10px;
+      margin-bottom: 5px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*location text and grid*/
+
+#text-location-area {
+    margin-left: 50px;
+    height: %;
+}
+
+#location-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text text text text"
+        "heading heading heading heading2";
+    height: 150px;
+    box-sizing: border-box;
+}
+
+#location-text {
+    grid-area: text;
+}
+
+#location-headings {
+    grid-area: heading;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    margin-right: 20px;
+}
+
+#location-headings2 {
+    grid-area: heading2;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+#states-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    line-height: 10px;
+    
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-line {
+    display: block;
+    border-top: 2px solid rgb(206, 206, 206);
+    content: "";
+    margin: 10px;
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    margin-left: 250px; 
+}
+
+
+
+#footer-link{
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%; 
+    border-top:1px solid black;
+    color: black;
+    padding-top: 10px;
+}
+
+.footer #who {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-left: 175px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #what {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #news {
+    background-color: white;
+    z-index: 1;
+    width: 175px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #where {
+    background-color: white;
+    z-index: 1;
+    width: 175px;
+    margin-right: 20px;
+    padding-right: 50
+} 
+
+.footer #contact {
+    background-color: white;
+    z-index: 1;
+    width: 150px;
+    margin-right: 20px;
+    padding-right: 50
+} 

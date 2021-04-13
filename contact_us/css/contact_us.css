@@ -1,0 +1,85 @@
+/* The sidebar menu */
+body {
+    font-family: "Lucida Sans reg", sans-serif;
+  }
+
+  .sidenav {
+    width: 160px;
+    height: 0 auto;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 20px; /*This affects position from left*/
+    background: #AD0000;
+    background: -moz-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: -webkit-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: linear-gradient(to bottom, #AD0000 0%, #6E0000 100%);
+    overflow-x: hidden;
+  }
+
+/*not sure if this works yet*/  
+#sidenav-wrapper {
+    height: 100vh; /* Add height */
+    overflow-y: auto;  /* Add overflow-y */
+    overflow-x: hidden;  /* Add overflow-x */
+    /* min-height: 100vh; */
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+/*Title*/
+  h3{
+      text-align: left;
+      margin: 20px;
+      margin-bottom: 2px;
+      color: #eee;
+  }
+
+/*border line*/
+  h6{
+    color: #eee;
+    border-bottom: 2px solid #eee;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Category*/
+  h5{
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 1px;
+    font-size: 12px;
+    color: #eee;
+  }
+
+/*Link*/
+  .sidenav a {
+    text-indent: 40px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-size: 12px;
+    color: #eee;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #ffd23d;
+  }
+/*Image*/
+  div img{
+      margin-top: -10px;
+      margin-bottom: 5px;
+  }
+
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

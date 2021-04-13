@@ -1,22 +1,298 @@
+
+
+
+/* Styling for Background Image, logo and login*/
+.outer-container {
+    display: flex;
+    flex-grow: 1;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+#img {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;   
+}
+
+.container {
+    margin-left: 250px;
+    margin-right: 250px; /*changed from 0 to fit screen*/
+    margin-top: 5%;
+    position: absolute;
+    width: auto;/*added to fit screen*/
+    background-color: white; /* added to cover whole page*/
+  
+}
+
+.row {
+    /*background-color: white; commented out and moved to container*/ 
+
+    
+}
+
+#image {
+    padding-left: 50px;
+}
+
+.col-md-10 {
+    margin-top: 5%;
+}
+
+.col-md-2 {
+    margin-top: 0%;
+}
+
+/*.col-md-12 {    
+}  commented out because it was empty*/
+
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+    color: white;
+    /*margin-left: 80px; commented out so the placement was correct*/
+    width: 65px;
+    height: 35px;
+}
+
+/* sidebar styling*/
+/* The sidebar menu */
+body {
+    font-family: "Lucida Sans reg", sans-serif;
+  }
+
+  .sidenav {
+    width: 160px;
+    height: 348px;
+    position: absolute;/*changed from fixed because it moved with the page*/
+    z-index: 1;
+    top: 197px;/*changed from 200px because it was too low*/
+    right: 50px; /*This affects position from left*/
+    background: #AD0000;
+    background: -moz-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: -webkit-linear-gradient(top, #AD0000 0%, #6E0000 100%);
+    background: linear-gradient(to bottom, #AD0000 0%, #6E0000 100%);
+    overflow-x: hidden;
+  }
+
+/*not sure if this works yet*/  
+#sidenav-wrapper {
+    height: 100vh; /* Add height */
+    overflow-y: auto;  /* Add overflow-y */
+    overflow-x: hidden;  /* Add overflow-x */
+    /* min-height: 100vh; */
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    
+  }
+
+/*Title*/
+  h3{
+      text-align: center;/*changed from left*/
+      margin: 20px;
+      margin-bottom: 2px;
+      color: #eee;
+      font-size: 18px;
+      
+      
+  }
+
+/*border line*/
+  h6{
+    color: #eee;
+    border-bottom: 2px solid #eee;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Category*/
+  .h5{
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 1px;
+    font-size: 12px;
+    color: #eee;
+    text-align: center; /*added*/
+  }
+
+/*Link*/
+  .sidenav a {
+    text-indent: 40px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-size: 12px;
+    color: #eee;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #ffd23d;
+  }
+/*Image*/
+  div img{
+      margin-top: -10px; 
+      margin-bottom: 5px;
+  }
+
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/*forward-thinking image*/
+#forward_thinking{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 10px;
+    width: 75%;
+
+}
+
+#who_we_are{
+    vertical-align: top;
+    
+}
+#who_we_are_header{
+    padding-top: 10px;
+    font-weight: bold;
+    color: black; 
+    padding-left: 50px;
+    font-size: 12px;
+    
+}
+#who_we_are_text{
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 50px;
+    width: 75%;
+}
+
+#who_we_are_header2{
+    font-weight: bold;
+    color: black; 
+    width: 160px;
+    font-size: 12px;
+    padding-top: 40px;
+
+  }
+#who_we_are_text2{
+        color: black;
+        width: 160px;
+        font-size: 12px;
+
+    }
+
+.contact_info{
+    right: 50px;
+    top: 520px;
+    position: absolute;]
+}
+
+#sb_text{
+    color: white;
+    margin-left: 5px;
+    font-size: 12px;
+}
 .text-uppercase{
     font-size: 10px;
     color: black;
     text-decoration: none;
 
 }
+
 #footer-link{
     text-align: center;
     margin:0 auto;
-    width: 50%;
-    border-top: 5px ;
+    width: 90%; 
+    border-top:1px solid black;
+}
+
+.footer{
+    padding-top: 50px;
+
+}
+/* header*/
+#nav {
+  position: absolute;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;
+
+  }
+#nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;/*changed to 0*/
+  float:left;
+}
+#nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 155px 20px;  /* height of the nav bar* chnaged froom 300*/ 
+  display: block;
+  color: black;
+  text-align: center;
+  font-weight: thick;
+  font-size: medium;
+  
+}
+.line-1{
+  width: 91%;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-top: 10px;/* changed from padding-bottom 1px*/
+  margin-left: 40px;
+}
+
+.line-2{
+  margin-left: 40px;
+  width: 91%;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 35px;
 }
 
 
-#footer-hr{
-    width: 75%;
-    border-color: black;
-    border-top: 4px solid black;
-    margin: 30px auto;
+#vertline1 {
+  float: left;
+  margin-top: 155px;
+  color: gray;
 }
 
+#vertline2 {
+  float: left;
+  margin-top: 155px;
+  color: gray;
+}
 
+#vertline3 {
+  float: left;
+  margin-top: 155px;
+  color: gray;
+}
+
+#vertline4 {
+  float: left;
+  margin-top: 155px;
+  color: gray;
+}
